@@ -1,9 +1,13 @@
+div * {
+  border: 1px solid red;
+}
+
 body,html {
   margin: 0px; 
   height: 100%;
   background-color: #7f5a83;
   background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
-  ;
+  background-repeat: no-repeats;
 }
 
 img {
@@ -18,30 +22,46 @@ img {
 }
 
 .card {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 10px;
   background-color: aqua;
-  border: 1px solid greenyellow;
   grid-column: 2 / 2;
   grid-row: 2 / 2; 
+  padding: 30px;
+  border-radius: 25px;
 }
 
 .card_list {
-  margin: 10px 10px 10px 10px;
+  grid-column: 2/3;
   background-color: whitesmoke;
-  border: 1px solid red;
-  padding: 10px;
-  width: 50%;
+  
 }
 
 .card_images {
+  position: relative
+  display: flex;
+  align-items: center;
+  grid-column: 1/2;
+  border-radius: 25px 0px 0px 25px
   background-color: chocolate;
-  background-image: url(images/bg-pattern-desktop.svg);
+  background-image: ;
   background-repeat: no-repeat;
-  background-position-x: left;
-  width: 50%;
+  background-position-x: top left;
+  height: 100%;
+}
+
+#image1 {
+  position: relative; 
+  z-index: 1;
+  left: -130px;
+  top: 30%;
+}
+
+#image2 {
+  position: relative; 
+  z-index: 1;
+  left: 0px; 
 }
 
 /* CSS rules for the footer */
