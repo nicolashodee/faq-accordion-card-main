@@ -4,29 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   
-  <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-    console.log("JS launched");
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-          console.log("clicked!");
-        } else {
-          panel.style.display = "block";
-          console.log("blocked!");
-        }
-      });
-    }
-    </script>
+  
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
   <title>Frontend Mentor | FAQ Accordion Card</title>
-
+  <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
 
@@ -35,47 +18,66 @@
     <div class="card">
       <div id="image1"><img src="images/illustration-box-desktop.svg"></div>
       <div class="card_images">
-        
         <div id="image2"><img src="images/illustration-woman-online-desktop.svg"></div>
-        
       </div>
 
       <div class="card_list">
 
-        <div>FAQ</div>
+        <h1>FAQ</h1>
 
-        <div class="accordion">
-
-          <button class="accordion">How many team members can I invite?</button>
-          <div class="panel">
-            <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
-              team members for the Premium plan.</p>
+        <div class="faq-container">
+          <!-- QUESTION 1-->
+          <div class="question-container">
+            <div class="question-icon"><img src="images/icon-arrow-down.svg" alt=""></div>
+            <div class="question">How many team members can I invite?</div>
+            <div class="answer">
+              <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+                team members for the Premium plan.</p>
+            </div>
           </div>
 
-          <button class="accordion">What is the maximum file upload size?</button>
-          <div class="panel">
-            <p>No more than 2GB. All files in your account must fit your allotted storage space.
-            </p>
+          <!-- QUESTION 2-->
+          <div class="question-container">
+            <div class="question-icon"><img src="images/icon-arrow-down.svg" alt=""></div>
+            <div class="question">What is the maximum file upload size?</div>
+            <div class="answer">
+              <p>No more than 2GB. All files in your account must fit your allotted storage space.
+              </p>
+            </div>
           </div>
+          
 
-          <button class="accordion">How do I reset my password?</button>
-          <div class="panel">
-            <p>Click “Forgot password” from the login page or “Change password” from your profile page.
-              A reset link will be emailed to you.</p>
+          <!-- QUESTION 3-->
+          <div class="question-container">
+            <div class="question-icon"><img src="images/icon-arrow-down.svg" alt=""></div>
+            <div class="question">How do I reset my password?</div>
+            <div class="answer">
+              <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+                A reset link will be emailed to you.</p>
+            </div>
           </div>
+          
 
-          <button class="accordion">Can I cancel my subscription?</button>
-          <div class="panel">
-            <p>Yes! Send us a message and we’ll process your request no questions asked.
-            </p>
+          <!-- QUESTION 4-->
+          <div class="question-container">
+            <div class="question-icon"><img src="images/icon-arrow-down.svg" alt=""></div>
+            <div class="question">Can I cancel my subscription?</div>
+            <div class="answer">
+              <p>Yes! Send us a message and we’ll process your request no questions asked.
+              </p>
+            </div>
           </div>
+          
 
-          <button class="accordion">Do you provide additional support?</button>
-          <div class="panel">
-            <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.
-            </p>
+          <!-- QUESTION 5-->
+          <div class="question-container">
+            <div class="question-icon"><img src="images/icon-arrow-down.svg" alt=""></div>
+            <div class="question">Do you provide additional support?</div>
+            <div class="answer">
+              <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.
+              </p>
+            </div>
           </div>
-
         </div>
       </div> 
     </div>

@@ -4,19 +4,21 @@ div * {
 }
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body,html {
   margin: 0px; 
   height: 100%;
   background-color: #7f5a83;
   background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
   background-repeat: no-repeats;
-  font-family: "Arial", monospace;
-}s
+  font-family: 'Open Sans', sans-serif;
+  font-size: 8px;
+}
 
 .card_holder {
   display: grid;
-  grid-template-columns:  25% 50% 25%;
-  grid-template-rows:  25vh 50% 25vh;
+  
 }
 
 .card {
@@ -30,6 +32,7 @@ body,html {
   border-radius: 25px;
   margin: 10vw;
   overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .card_list {
@@ -37,7 +40,6 @@ body,html {
   flex-direction: column;
   justify-content: top;
   grid-column: 2/3;
-  background-color: whitesmoke;
   margin: 30px;
 }
 
@@ -79,38 +81,40 @@ body,html {
 
 /* Style for the accordion */
 
-.accordion {
+.faq-container {
+  padding: 15px;
+}
+.question-container {
+  display: flex;
+  position: relative;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 4px;
   cursor: pointer;
-  padding: 15px 0px; 
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
+  transition: 400ms;
+  margin: 5px;
+  background-color: burlywood;
 }
 
-.active, .accordion:hover {
-  background-color: white;
+.question-container .question {
+  border: black;
+  font-size: 18px;
 }
 
-.accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
+.question-container .question-icon.active {
+  transform: rotate(180deg);
 }
 
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
+.answer {
   max-height: 0;
   overflow: hidden;
-  transition: 0.2s ease-out;
+  transition: 400ms;
+  background-color: coral;
+}
+
+.answer.active {
+  max-height: 200px;
+
 }
 
 
