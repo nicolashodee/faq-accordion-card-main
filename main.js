@@ -9,5 +9,4 @@ questions.forEach(question => {
     answer.classList.toggle("active");
     questionIcon.classList.toggle("active"); 
   }); 
-  
 }); 

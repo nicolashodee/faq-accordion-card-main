@@ -2,13 +2,6 @@
 
 This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). 
 
-## Overview
-
-This challenge involves many essential aspects of front end development such as : 
-- building responsive pages according to the user's screen size. 
-- using Javascript to manipulate the DOM so that you can unfold an accordion. 
-- using CSS/HTML to position your work within a page according to a given layout. 
-
 ### The challenge
 
 Users should be able to:
@@ -75,13 +68,9 @@ questions.forEach(question => {
 }); 
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-At the moment, the accordion do not unfold, and I need to find the reason why. 
+At the moment, the accordion doesn't unfold, and I need to find the reason why. 
 JS is loading, CSS is ready for the different states, but I can't manage to record any "click" using JS. Probably an error somewhere... 
 
 ### Useful resources
